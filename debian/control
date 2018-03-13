@@ -1,0 +1,28 @@
+Source: gwn-phone
+Section: python
+Priority: optional
+Maintainer: GetWellNetwork <plc-dev@getwellnetwork.com>
+Build-Depends:
+ debhelper (>=9),
+ dh-python,
+ python3-all,
+ python3-pytest,
+ python3-setuptools,
+Testsuite: autopkgtest
+Standards-Version: 3.9.7
+X-Python3-Version: >= 3.5
+
+Package: gwn-phone
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ dbus,
+ python3-dbus,
+ python3-gi,
+ gwn-create-users,
+ gwn,
+ gwn-helpers,
+ gwn-conf-system,
+Description: liblinphone based sip phone service with python-tk front end
+ liblinphone based sip phone service with python-tk front end.

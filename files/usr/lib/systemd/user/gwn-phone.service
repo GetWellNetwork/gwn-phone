@@ -1,0 +1,14 @@
+[Unit]
+Description=liblinphone based sip phone service with python-tk front end
+PartOf=patientx.target
+
+[Service]
+Type=dbus
+BusName=com.getwellnetwork.plc.gwnsip1
+ExecStart=/usr/bin/gwn-phone
+EnvironmentFile=-/etc/default/gwn
+EnvironmentFile=-/etc/default/gwn-phone
+Restart=always
+
+[Install]
+WantedBy=patientx.target
