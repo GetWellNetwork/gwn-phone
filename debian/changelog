@@ -1,5 +1,5 @@
-gwn-phone (0.0.1) UNRELEASED; urgency=medium
+gwn-phone (0.0.1) xenial; urgency=medium
 
   * Initial release.
 
- -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Tue, 13 Mar 2018 14:54:36 -0400
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Wed, 14 Mar 2018 17:26:39 -0400
