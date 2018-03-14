@@ -1,5 +1,5 @@
 [Unit]
-Description=liblinphone based sip phone service with python-tk front end
+Description=liblinphone based sip phone service
 PartOf=patientx.target
 
 [Service]
