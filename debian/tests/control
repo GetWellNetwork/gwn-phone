@@ -1,3 +1,0 @@
-Tests: integration-runner.sh
-Depends: @, python3-pytest
-Restrictions: needs-root, allow-stderr

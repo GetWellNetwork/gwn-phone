@@ -4,7 +4,7 @@ default-target-for-jenkins: ;
 
 build/venv/bin/activate:
 	mkdir -p build
-	virtualenv -p python3 build/venv
+	virtualenv -p python build/venv
 	sh -c '. $(CURDIR)/build/venv/bin/activate; pip install -r build-requirements.txt; pip install -e .'
 
 rst: build/venv/bin/activate

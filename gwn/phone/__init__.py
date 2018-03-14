@@ -7,7 +7,7 @@ DBus Service
 :Bus:
     ``session``
 :Busname:
-    ``com.getwellnetwork.plc.gwnsip1``
+    ``com.getwellnetwork.plc.gwnphone1``
 """
 
 __title__ = 'gwn.phone'
@@ -18,9 +18,9 @@ __copyright__ = 'Copyright 2017 GetWellNetwork, Inc., BSD copyright and disclaim
 __description__ = 'liblinphone based sip phone service with python-tk front end'
 __namespace__ = 'gwn'
 
-BUSNAME = 'com.getwellnetwork.plc.gwnsip1'
-OBJECTPATH = '/com/getwellnetwork/plc/gwnsip1/GwnSip'
-INTERFACE = 'com.getwellnetwork.plc.gwnsip1.GwnSip1'
-SUPPORT_OBJECTPATH = '/com/getwellnetwork/plc/gwnsip1/Support'
+BUSNAME = 'com.getwellnetwork.plc.gwnphone1'
+INTERFACE = 'com.getwellnetwork.plc.gwnphone1.GwnPhone1'
+OBJECTPATH = '/com/getwellnetwork/plc/gwnphone1/GwnPhone'
+SUPPORT_OBJECTPATH = '/com/getwellnetwork/plc/gwnphone1/Support'
 SUPPORT_INTERFACE = 'com.getwellnetwork.plc.Support1'
 

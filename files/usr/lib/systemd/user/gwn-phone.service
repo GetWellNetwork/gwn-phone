@@ -4,7 +4,7 @@ PartOf=patientx.target
 
 [Service]
 Type=dbus
-BusName=com.getwellnetwork.plc.gwnsip1
+BusName=com.getwellnetwork.plc.gwnphone1
 ExecStart=/usr/bin/gwn-phone
 EnvironmentFile=-/etc/default/gwn
 EnvironmentFile=-/etc/default/gwn-phone
