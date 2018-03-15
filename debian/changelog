@@ -1,3 +1,9 @@
+gwn-phone (0.0.3) UNRELEASED; urgency=medium
+
+  * [27f5146] Fix build for python2, lintian and deb process
+
+ -- Will DeBerry <wdeberry@getwellnetwork.com>  Thu, 15 Mar 2018 10:41:11 -0400
+
 gwn-phone (0.0.2) xenial; urgency=medium
 
   * [0f4dfa2] plc-4721 added sound assets
