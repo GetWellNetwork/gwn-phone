@@ -1,14 +1,24 @@
 [Unit]
 Description=liblinphone based sip phone service
 PartOf=patientx.target
+After=gwn-audio-manager.service
+Requires=gwn-audio-manager.service
+After=gwn-display-control.service
+Requires=gwn-display-control.service
+After=gwn-flytech-gpio.service
+Requires=gwn-flytech-gpio.service
+Before=gwn-phone-ui.service
+Wants=gwn-rdp.service
+After=gwn-webkit-overlay.service
+Wants=gwn-webkit-overlay.service
 
 [Service]
 Type=dbus
 BusName=com.getwellnetwork.plc.gwnphone1
-ExecStart=/usr/bin/gwn-phone
+ExecStart=PULSE_SINK=thirdparty /usr/bin/gwn-phone
 EnvironmentFile=-/etc/default/gwn
 EnvironmentFile=-/etc/default/gwn-phone
-Restart=always
+Restart=on-failure
 
 [Install]
 WantedBy=patientx.target

@@ -54,8 +54,6 @@ def add_non_none_to_dict( dct, key, value ):
 class GwnPhone( dbus.service.Object ):
 
     def __init__( self ):
-        bus_name = dbus.service.BusName( BUSNAME, bus = dbus.SessionBus() )
-        dbus.service.Object.__init__( self, bus_name = bus_name, object_path = OBJECTPATH )
         self.logger = logging.getLogger()
         handler = JournalHandler( SYSLOG_IDENTIFIER = 'gwnphone' )
         self.logger.addHandler( handler )
@@ -110,7 +108,7 @@ class GwnPhone( dbus.service.Object ):
             if not self.password:
                 self.password = '1234'
         except Exception as e:
-            self.logger.error( 'bad config, bailing out now: {}'.format( e ) )
+            self.logger.error( 'not configured for phone use, exiting: {}'.format( e ) )
             sys.exit( 0 )
         dbus.SessionBus().add_signal_receiver(
                 self._on_settings_changed,
@@ -157,6 +155,8 @@ class GwnPhone( dbus.service.Object ):
         self.core.ringer_device   = sound_dev
         self.core.mic_enabled     = True
         self.iterate_timer = gobject.timeout_add( 100, self._iterate )
+        bus_name = dbus.service.BusName( BUSNAME, bus = dbus.SessionBus() )
+        dbus.service.Object.__init__( self, bus_name = bus_name, object_path = OBJECTPATH )
 
 
     def _iterate( self ):
