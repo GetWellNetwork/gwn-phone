@@ -1,3 +1,9 @@
+gwn-phone (0.0.4) UNRELEASED; urgency=medium
+
+  * [6424f59] plc-4721 minor fixes so service actually runs
+
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Thu, 15 Mar 2018 16:09:53 -0400
+
 gwn-phone (0.0.3) xenial; urgency=medium
 
   [ Will DeBerry ]
