@@ -1,8 +1,9 @@
-gwn-phone (0.0.3) UNRELEASED; urgency=medium
+gwn-phone (0.0.3) xenial; urgency=medium
 
+  [ Will DeBerry ]
   * [27f5146] Fix build for python2, lintian and deb process
 
- -- Will DeBerry <wdeberry@getwellnetwork.com>  Thu, 15 Mar 2018 10:41:11 -0400
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Thu, 15 Mar 2018 14:59:37 -0400
 
 gwn-phone (0.0.2) xenial; urgency=medium
 
