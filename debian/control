@@ -8,7 +8,6 @@ Build-Depends:
  python-all,
  python-pytest,
  python-setuptools,
-Testsuite: autopkgtest
 Standards-Version: 3.9.7
 X-Python-Version: >= 2.7
 
@@ -26,5 +25,5 @@ Depends:
  gwn,
  gwn-helpers,
  gwn-conf-system,
-Description: liblinphone based sip phone service with python-tk front end
+Description: liblinphone based sip phone
  liblinphone based sip phone service with python-tk front end.

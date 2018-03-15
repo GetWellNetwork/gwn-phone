@@ -142,7 +142,7 @@ class GwnPhone( dbus.service.Object ):
         self.core.remote_ringback_tone = None
         self.core.ringback = '/usr/share/gwn-phone/sound/ringback.wav'
         self.dial_tone = '/usr/share/gwn-phone/sound/dial_tone.wav'
-        self.registration_state = linphone.RegistrationState.None
+        self.registration_state = linphone.RegistrationState._None
         self.core.ring = None
         self.core.terminate_all_calls()
         self.current_call = None

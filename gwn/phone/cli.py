@@ -1,7 +1,7 @@
 from dbus.mainloop.glib import DBusGMainLoop
 from .support_service import SupportService
 from gi.repository.GObject import MainLoop
-from .sip_service import GwnPhone
+from .phone import GwnPhone
 
 
 

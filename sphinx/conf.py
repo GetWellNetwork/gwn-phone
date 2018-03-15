@@ -76,6 +76,7 @@ autodoc_mock_imports = [
     'dbus.service',
     'gi.repository',
     'gi.repository.GObject',
+    'linphone',
     'systemd.journal.JournalHandler'
 ]
 
