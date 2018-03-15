@@ -23,7 +23,7 @@ class SupportService( dbus.service.Object ):
 
     def __init__( self, phone_service ):
         bus_name = dbus.service.BusName( BUSNAME, bus = dbus.SystemBus() )
-        super().__init__( bus_name = bus_name, object_path = SUPPORT_OBJECTPATH )
+        dbus.service.Object.__init__( self, bus_name = bus_name, object_path = SUPPORT_OBJECTPATH )
         self.phone_service = phone_service
 
 
