@@ -1,3 +1,9 @@
+gwn-phone (0.0.5) UNRELEASED; urgency=medium
+
+  * [551811c] plc-4721 removed linphone from dependencies
+
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Tue, 20 Mar 2018 18:32:29 -0400
+
 gwn-phone (0.0.4) xenial; urgency=medium
 
   * [6424f59] plc-4721 minor fixes so service actually runs
