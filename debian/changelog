@@ -1,8 +1,8 @@
-gwn-phone (0.0.7) UNRELEASED; urgency=medium
+gwn-phone (0.0.7) xenial; urgency=medium
 
   * [85e83c5] added .so excluded by gitignore
 
- -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Wed, 21 Mar 2018 14:09:15 -0400
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Wed, 21 Mar 2018 14:12:17 -0400
 
 gwn-phone (0.0.6) xenial; urgency=medium
 
