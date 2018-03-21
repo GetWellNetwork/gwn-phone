@@ -1,3 +1,9 @@
+gwn-phone (0.0.6) UNRELEASED; urgency=medium
+
+  * [82a2db3] added linphone python wrapper from 3.12.0-317 snapshot
+
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Wed, 21 Mar 2018 13:03:01 -0400
+
 gwn-phone (0.0.5) xenial; urgency=medium
 
   * [551811c] plc-4721 removed linphone from dependencies
