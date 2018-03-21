@@ -1,8 +1,8 @@
-gwn-phone (0.0.8) UNRELEASED; urgency=medium
+gwn-phone (0.0.8) xenial; urgency=medium
 
   * [05db042] added options to allow .so files
 
- -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Wed, 21 Mar 2018 15:49:35 -0400
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Wed, 21 Mar 2018 15:49:39 -0400
 
 gwn-phone (0.0.7) xenial; urgency=medium
 
