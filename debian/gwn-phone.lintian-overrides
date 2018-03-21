@@ -1,1 +1,5 @@
 gwn-phone binary: binary-without-manpage *
+gwn-phone: arch-independent-package-contains-binary-or-object *
+gwn-phone: embedded-library *
+gwn-phone: missing-dependency-on-libc *
+gwn-phone: unstripped-binary-or-object *
