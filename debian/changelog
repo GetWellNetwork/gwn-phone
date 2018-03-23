@@ -1,3 +1,9 @@
+gwn-phone (0.0.9) UNRELEASED; urgency=medium
+
+  * [1338a45] added phone configuration watcher service
+
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Fri, 23 Mar 2018 13:53:41 -0400
+
 gwn-phone (0.0.8) xenial; urgency=medium
 
   * [05db042] added options to allow .so files
