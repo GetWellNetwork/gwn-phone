@@ -58,7 +58,6 @@ class GwnPhone( dbus.service.Object ):
         handler = JournalHandler( SYSLOG_IDENTIFIER = 'gwnphone' )
         self.logger.addHandler( handler )
         self.logger.setLevel( logging.INFO )
-        self.logger.info( 'connected to session bus' )
         self.settings_service = dbus.SystemBus().get_object(
             'com.getwellnetwork.plc.clerk1',
             '/com/getwellnetwork/plc/clerk1/Settings'
@@ -110,12 +109,6 @@ class GwnPhone( dbus.service.Object ):
         except Exception as e:
             self.logger.error( 'not configured for phone use, exiting: {}'.format( e ) )
             sys.exit( 0 )
-        dbus.SessionBus().add_signal_receiver(
-                self._on_settings_changed,
-                signal_name = 'Changed',
-                member_keyword = 'sig_name',
-                dbus_interface = 'com.getwellnetwork.plc.clerk1.Settings1'
-        )
         self.dial_tone_timer = None
         self.factory = linphone.Factory.get()
         linphone.set_log_handler( log_handler )
@@ -157,34 +150,12 @@ class GwnPhone( dbus.service.Object ):
         self.iterate_timer = gobject.timeout_add( 100, self._iterate )
         bus_name = dbus.service.BusName( BUSNAME, bus = dbus.SessionBus() )
         dbus.service.Object.__init__( self, bus_name = bus_name, object_path = OBJECTPATH )
+        self.logger.info( 'connected to session bus' )
 
 
     def _iterate( self ):
         self.core.iterate()
         return True
-
-
-    def _on_settings_changed( self, reason, entries ):
-        try:
-            if len( entries ) and reason == 'write':
-                for entry in entries:
-                    for path in self.conf_path:
-                        if self.conf_path[path] == entry:
-                            if path == 'port':
-                                self.port = entries[entry]
-                            elif path == 'server':
-                                self.server = entries[entry]
-                            elif path == 'phone_number':
-                                self.phone_number = entries[entry]
-                            elif path == 'username':
-                                self.username = entries[entry]
-                            elif path == 'password':
-                                self.password = entries[entry]
-                            self.logger.info( '{} updated: {}'.format( path, entries[entry] ) )
-        except TypeError as e:
-            pass
-        except Exception as e:
-            self.logger.error( 'exception in _on_settings_changed: {}'.format( e ) )
 
 
     def _global_state_changed( self, *args, **kwargs ):

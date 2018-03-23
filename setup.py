@@ -18,6 +18,7 @@ setup(
     entry_points = {
         'console_scripts': [
             'gwn-phone = gwn.phone.cli:main',
+            'gwn-phone-conf-watch = gwn.phone.conf_watch:main',
         ],
     }
 )

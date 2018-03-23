@@ -1,6 +1,8 @@
 [Unit]
 Description=liblinphone based sip phone service
 PartOf=patientx.target
+After=gwn-phone-conf-watch.service
+Requires=gwn-phone-conf-watch.service
 After=gwn-audio-manager.service
 Requires=gwn-audio-manager.service
 After=gwn-display-control.service
@@ -8,7 +10,7 @@ Requires=gwn-display-control.service
 Before=gwn-phone-ui.service
 Wants=gwn-rdp.service
 After=gwn-webkit-overlay.service
-Wants=gwn-webkit-overlay.service
+Requires=gwn-webkit-overlay.service
 
 [Service]
 Type=dbus

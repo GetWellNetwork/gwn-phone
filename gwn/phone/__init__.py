@@ -1,5 +1,5 @@
 """
-liblinphone based sip phone service with python-tk front end.
+liblinphone based sip phone service
 
 DBus Service
 ------------
@@ -15,7 +15,7 @@ __version__ = '0.0.1'
 __author__ = 'GetWellNetwork'
 __author_email__ = 'plc-dev@getwellnetwork.com'
 __copyright__ = 'Copyright 2017 GetWellNetwork, Inc., BSD copyright and disclaimer apply'
-__description__ = 'liblinphone based sip phone service with python-tk front end'
+__description__ = 'liblinphone based sip phone service'
 __namespace__ = 'gwn'
 
 BUSNAME = 'com.getwellnetwork.plc.gwnphone1'

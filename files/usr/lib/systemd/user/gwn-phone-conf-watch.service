@@ -1,0 +1,15 @@
+[Unit]
+Description=phone configuration change watcher service
+PartOf=patientx.target
+After=gwn-webkit-overlay.service
+Before=gwn-phone.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gwn-phone-conf-watch
+EnvironmentFile=-/etc/default/gwn
+Restart=always
+
+[Install]
+WantedBy=patientx.target
+RequiredBy=gwn-phone.service
