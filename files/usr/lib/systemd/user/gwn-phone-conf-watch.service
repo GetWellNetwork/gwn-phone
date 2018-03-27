@@ -3,6 +3,8 @@ Description=phone configuration change watcher service
 PartOf=patientx.target
 After=gwn-webkit-overlay.service
 Before=gwn-phone.service
+ConditionPathExists=|/run/gwn-device/C73
+ConditionPathExists=|/run/gwn-device/C43
 
 [Service]
 Type=simple
