@@ -1,1 +1,2 @@
 usr/lib/systemd/user/gwn-phone.service etc/skel.patient/config/systemd/user/patientx.target.wants/gwn-phone.service
+usr/lib/systemd/user/gwn-phone-conf-watch.service etc/skel.patient/config/systemd/user/patientx.target.wants/gwn-phone-conf-watch.service
