@@ -1,8 +1,8 @@
-gwn-phone (0.0.11) UNRELEASED; urgency=medium
+gwn-phone (0.0.11) xenial; urgency=medium
 
   * [9ae7626] Add symlink to enable gwn-phone-conf-watch.service
 
- -- Will DeBerry <wdeberry@getwellnetwork.com>  Mon, 02 Apr 2018 15:58:45 -0400
+ -- Will DeBerry <wdeberry@getwellnetwork.com>  Mon, 02 Apr 2018 15:58:46 -0400
 
 gwn-phone (0.0.10) xenial; urgency=medium
 
