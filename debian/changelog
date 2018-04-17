@@ -1,8 +1,8 @@
-gwn-phone (0.0.12) UNRELEASED; urgency=medium
+gwn-phone (0.0.12) xenial; urgency=medium
 
   * [d0b1472] Change binding between gwn-phone and gwn-phone-conf-watcher
 
- -- Will DeBerry <wdeberry@getwellnetwork.com>  Tue, 17 Apr 2018 08:23:52 -0400
+ -- Will DeBerry <wdeberry@getwellnetwork.com>  Tue, 17 Apr 2018 08:23:53 -0400
 
 gwn-phone (0.0.11) xenial; urgency=medium
 
