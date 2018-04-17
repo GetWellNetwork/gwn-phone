@@ -1,8 +1,8 @@
-gwn-phone (0.0.13) UNRELEASED; urgency=medium
+gwn-phone (0.0.13) xenial; urgency=medium
 
   * [8e5aa4a] another pass at systemd conf
 
- -- Will DeBerry <wdeberry@getwellnetwork.com>  Tue, 17 Apr 2018 14:37:53 -0400
+ -- Will DeBerry <wdeberry@getwellnetwork.com>  Tue, 17 Apr 2018 14:37:54 -0400
 
 gwn-phone (0.0.12) xenial; urgency=medium
 
