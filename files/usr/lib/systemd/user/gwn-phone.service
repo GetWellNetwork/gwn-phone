@@ -2,7 +2,7 @@
 Description=liblinphone based sip phone service
 PartOf=patientx.target
 After=gwn-phone-conf-watch.service
-Requisite=gwn-phone-conf-watch.service
+BindsTo=gwn-phone-conf-watch.service
 After=gwn-audio-manager.service
 Requires=gwn-audio-manager.service
 After=gwn-display-control.service
