@@ -1,8 +1,8 @@
-gwn-phone (0.0.14) UNRELEASED; urgency=medium
+gwn-phone (0.0.14) xenial; urgency=medium
 
   * [9c4486e] Allow phone service to run on LS1853
 
- -- Will DeBerry <wdeberry@getwellnetwork.com>  Thu, 22 Aug 2019 06:16:15 -0700
+ -- Will DeBerry <wdeberry@getwellnetwork.com>  Thu, 22 Aug 2019 06:16:16 -0700
 
 gwn-phone (0.0.13) xenial; urgency=medium
 
