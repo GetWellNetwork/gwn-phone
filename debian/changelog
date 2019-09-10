@@ -1,3 +1,9 @@
+gwn-phone (0.0.15) UNRELEASED; urgency=medium
+
+  * [1880bce] restart gwn-phone-ui explicitly on conf change
+
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Tue, 10 Sep 2019 13:07:37 -0400
+
 gwn-phone (0.0.14) xenial; urgency=medium
 
   * [9c4486e] Allow phone service to run on LS1853
