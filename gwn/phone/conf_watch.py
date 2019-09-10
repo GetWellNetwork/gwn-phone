@@ -39,7 +39,8 @@ class PhoneConfWatcher( object ):
                     for conf in self.confs:
                         if conf in entry:
                             self.logger.info( 'phone config {} updated: {}'.format( entry, entries[entry] ) )
-                            proc_args = ['systemctl', '--user', 'restart', 'gwn-phone.service']
+                            proc_args = ['systemctl', '--user', 'restart',
+                                    'gwn-phone.service', 'gwn-phone-ui.service']
                             try:
                                 subprocess.check_call( proc_args )
                             except subprocess.CalledProcessError as e:
