@@ -1,3 +1,9 @@
+gwn-phone (0.0.16) UNRELEASED; urgency=medium
+
+  * [8d510fd] plc-5817 only use PCMU and PCMA audio codecs
+
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Fri, 18 Oct 2019 10:33:39 -0400
+
 gwn-phone (0.0.15) xenial; urgency=medium
 
   * [1880bce] restart gwn-phone-ui explicitly on conf change
