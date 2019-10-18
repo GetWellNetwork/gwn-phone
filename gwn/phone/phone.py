@@ -112,7 +112,8 @@ class GwnPhone( dbus.service.Object ):
         self.dial_tone_timer = None
         self.factory = linphone.Factory.get()
         linphone.set_log_handler( log_handler )
-        self.core = self.factory.create_core( None, None, None )
+        # PLC-5817 individual audio codecs are enabled and disabled from this static config file
+        self.core = self.factory.create_core( None, None, '/usr/share/gwn-phone/gwn-phone.conf' )
         self.callbacks = self.factory.create_core_cbs()
         self.callbacks.call_state_changed = self._call_state_changed
         self.callbacks.global_state_changed = self._global_state_changed
@@ -131,6 +132,8 @@ class GwnPhone( dbus.service.Object ):
         self.core.add_proxy_config( self.proxy_cfg )
         self.core.ring_during_incoming_early_media = False
         self.core.remote_ringback_tone = None
+        # set user agent string to make debugging at the SIP packet level easier
+        self.core.set_user_agent( 'gwn-phone', '0.0.16' )
         self.core.ringback = '/usr/share/gwn-phone/sound/ringback.wav'
         self.dial_tone = '/usr/share/gwn-phone/sound/dial_tone.wav'
         self.registration_state = linphone.RegistrationState._None
