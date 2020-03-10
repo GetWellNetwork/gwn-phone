@@ -1,8 +1,8 @@
-gwn-phone (0.0.17) UNRELEASED; urgency=medium
+gwn-phone (0.0.17) xenial; urgency=medium
 
   * [287321b] plc-5951 start phone service for D35
 
- -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Tue, 10 Mar 2020 11:45:16 -0400
+ -- Nick Beauregard <nbeauregard@getwellnetwork.com>  Tue, 10 Mar 2020 11:45:17 -0400
 
 gwn-phone (0.0.16) xenial; urgency=medium
 
