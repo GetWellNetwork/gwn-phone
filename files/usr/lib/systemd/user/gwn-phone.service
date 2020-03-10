@@ -11,8 +11,9 @@ Before=gwn-phone-ui.service
 Wants=gwn-rdp.service
 After=gwn-webkit-overlay.service
 Requires=gwn-webkit-overlay.service
-ConditionPathExists=|/run/gwn-device/C73
 ConditionPathExists=|/run/gwn-device/C43
+ConditionPathExists=|/run/gwn-device/C73
+ConditionPathExists=|/run/gwn-device/D35
 ConditionPathExists=|/run/gwn-device/LS1853
 
 [Service]
